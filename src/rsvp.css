@@ -1,0 +1,197 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-image: url('images/walking.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -70px;
+  padding: 4px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+#heading {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-family: "Great Vibes", serif;
+    margin: auto;
+    font-size: 11em;
+}
+
+#thanks {
+    font-family: "Great Vibes", serif;
+    font-size: 3em;
+}
+
+#rsvp_thanks {
+    background: #82a088;
+    width: 230px;
+    border-radius: 8px;
+    padding: 2px;
+    margin: auto;
+    text-align: center;
+}
+
+#rsvp_form {
+    background: #82a088;
+    width: 230px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: auto;
+}
+
+#names, #plus1, #coming_boxes, #button {
+    margin: 5px;
+}
+
+input[type=text] {
+    padding: 2px;
+    border-radius: 4px;
+    font-size: 1.4em;
+    border: none;
+    margin: 4px;
+    text-align: center;
+    height: 1.41em;
+    width: 213px;
+}
+
+#coming_boxes {
+    margin: auto;
+    width: 220px;
+}
+
+#guest_name {
+    margin-left: -1px;
+}
+
+button {
+    width: 220px;
+    font-size: 1.3em;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: #474747;
+    color: #82a088;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #fff;
+    background: #82a088;
+    border: 1px solid #000;
+}
+
+#plus1 {
+    display: block;
+}
+
+html {
+    background: #000;
+}
+
+.yesplusone-enter {
+  opacity: 0.01;
+  height: 0px;
+}
+
+.yesplusone-enter.yesplusone-enter-active {
+  opacity: 1;
+  transition: 60ms;
+}
+
+.yesplusone-leave {
+  opacity: 1;
+}
+
+.yesplusone-leave.yesplusone-leave-active {
+  opacity: 0.01;
+  height: 0px;
+  transition: 20ms;
+}
+
+.yesplusonecheckbox-enter {
+  opacity: 0.01;
+  height: 0px;
+  visibility: hidden;
+}
+
+.yesplusonecheckbox-enter.yesplusonecheckbox-enter-active {
+  opacity: 1;
+  transition: 20ms;
+}
+
+.yesplusonecheckbox-leave {
+  opacity: 1;
+}
+
+.yesplusonecheckbox-leave.yesplusonecheckbox-leave-active {
+  opacity: 0.01;
+  height: 0px;
+  transition: 20ms;
+}
+
+.thanks-enter {
+  opacity: 0.01;
+}
+
+.thanks-enter.thanks-enter-active {
+  opacity: 1;
+  transition: opacity .6s ease-in;
+}
+
+.thanks-leave {
+  opacity: 1;
+}
+
+.thanks-leave.thanks-leave-active {
+  opacity: 0.01;
+  visibility: hidden;
+  transition: opacity .01s ease-in;
+}
+
+.thanks-appear {
+  opacity: 0.01;
+}
+
+.thanks-appear.thanks-appear-active {
+  opacity: 1;
+  transition: opacity .8s ease-in;
+}
+
+@media only screen 
+    and (max-device-width: 678px)
+    and (orientation: portrait) {
+
+    body {
+        background-position: -390px -70px;
+    }
+
+    #rsvp_form {
+    }
+}
+
+@media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 812px)
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) {
+
+    body {
+        background-position: -590px -70px;
+    }
+}
+
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+    body {
+        background-position: -400px -70px;
+    }
+}
+
