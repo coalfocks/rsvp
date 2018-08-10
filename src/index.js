@@ -5,6 +5,7 @@ require("firebase/database");
 require("firebase/firestore");
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import './rsvp.css';
+import MoreInfo from './modal.js'
 
 var config = {
     apiKey: process.env.REACT_APP_APIKEY,
@@ -20,7 +21,10 @@ var db = firebase.firestore(app);
 class Heading extends React.Component{
     render() {
         return (
-            <h1 id="heading">Kim & Cole</h1>
+            <div id='header'>
+                <h1 id="heading">Kim & Cole</h1>
+                <MoreInfo />
+            </div>
         );
     }
 }
@@ -281,13 +285,13 @@ class Button extends React.Component{
         transitionLeaveTimeout={300}
         transitionAppear={true}
         transitionAppearTimeout={300}>
-            <h4> Searching guest list for your name... </h4>
+            <h4> Searching the guest list for your name... </h4>
         </ReactCSSTransitionGroup>
         ): null;
         return (
             <div id='button'>
                 {searching_text}
-                <button onClick={this.props.submit} disabled={this.props.canSubmit}> RSVP </button>
+                <button onClick={this.props.submit} disabled={!this.props.canSubmit}> RSVP </button>
             </div>
         );
     }
